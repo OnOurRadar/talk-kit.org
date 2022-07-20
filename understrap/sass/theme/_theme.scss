@@ -1,0 +1,305 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+
+// Global
+
+body {
+  font-family: filson-soft, sans-serif;
+  scroll-behavior: smooth;
+  font-weight: normal !important;
+}
+
+p {
+  font-family: filson-soft, sans-serif;
+  font-weight: normal !important;
+
+  a {
+    text-decoration: none !important;
+    background: $secondary;
+    color: black;
+    padding: 0px 5px ;
+    &:hover{
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
+
+
+.navbar-nav > li > a {
+  color: black;
+}
+
+.lh-2 {
+  line-height: 1.7rem;
+}
+
+.lh-3 {
+  line-height: 1.8rem;
+}
+
+
+
+.post-content {
+  line-height: 1.8rem;
+}
+
+label {
+  padding-bottom: 1.5rem;
+}
+
+// Containers & Sections
+
+.container-small,
+.container-large {
+  max-width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1) !important;
+}
+
+.bg-blue{
+  background-color: #72C8CC;
+}
+
+main {
+  background: linear-gradient(
+    180deg,
+    rgba(223, 243, 253, 1) 0%,
+    rgba(255, 255, 255, 0) 33%,
+    rgba(223, 243, 253, 1) 66%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.post-body {
+  background: linear-gradient(
+    180deg,
+    rgba(223, 243, 253, 0.592874649859944) 0%,
+    rgba(223, 253, 244, 1) 100%
+  );
+}
+
+.story-body {
+  background: linear-gradient(
+    180deg,
+    rgba(221, 243, 255, 1) 0%,
+    rgba(255, 242, 221, 1) 100%
+  );
+}
+
+// Little Fixes
+
+.highlight {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 8px $secondary !important;
+    border-radius: 3px;
+    outline: none !important;
+
+  }
+}
+
+.hightlight-primary {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 5px $primary !important;
+    outline: none !important;
+
+  }
+}
+
+
+.hightlight-feature {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 5px $secondary !important;
+    background: $bg-dark-blue;
+    outline: none !important;
+
+  }
+}
+
+.highlight-dark {
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 0 5px $dark !important;
+    outline: none !important;
+
+  }
+}
+
+.bg-lg-blue {
+  color: $bg-lg-blue;
+}
+
+.bg-theme-blue {
+  background-color: $bg-theme-blue;
+}
+
+.bg-dark-blue {
+  background-color: $bg-dark-blue;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.entry-content img,
+.entry-content iframe,
+.entry-content object,
+.entry-content embed {
+  max-width: 100%;
+}
+
+// Responsive
+
+@include media-breakpoint-between(xs, sm) {
+  .display-1 {
+    font-size: 3rem !important;
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+  h2 {
+    font-size: 1.4em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+  .section-100 {
+    min-height: 100vh;
+  }
+  .guide-title {
+    font-size: 0.9rem;
+  }
+  .module-lead {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .container-small {
+    width: 300px;
+  }
+
+
+  .nav-link {
+    border-radius: 30px;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    outline: none !important;
+
+    &:hover,&:focus{
+      background: $secondary;
+      box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    }
+   
+    @media (min-width: 576px) { 
+     padding-left: 1.5rem !important;
+     padding-right: 1.5rem !important;
+    }
+   }
+  
+   .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 1) !important;
+
+  }
+  
+
+   .header-alt {
+    .nav-link {
+      border-radius: 30px;
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+      &:hover,&:focus{
+        background: $dark;
+        outline: none !important; 
+        color: white !important;
+      
+       
+      }
+    
+     }
+    
+     .navbar-light .navbar-nav .nav-link {
+      color: rgba(0, 0, 0, 1) !important;
+  
+    }
+  }
+}
+
+
+
+
+
+
+@include media-breakpoint-up(md) {
+  .container-small {
+    width: 500px;
+  }
+
+  .hero-lead {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  .header-title {
+    font-size: 1.4rem;
+  }
+  .guide-title {
+    font-size: 1.1rem;
+  }
+  .guide-text {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+  .section-100 {
+    min-height: 100vh;
+  }
+  .info-text {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+
+  .module-lead {
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .container-small {
+    width: 700px;
+  }
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: lighter;
+  }
+}
